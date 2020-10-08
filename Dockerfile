@@ -19,7 +19,7 @@ COPY Gemfile.lock /var/www/footomo
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN gem update bundler 
-RUN apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev　
+RUN apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev　-y
 RUN bundle install 
 RUN bundle exec rails db:create 
 RUN bundle exec rails db:migrate
