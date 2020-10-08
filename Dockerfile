@@ -13,6 +13,7 @@ RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
 COPY ./ /var/www/footomo
 # WORKDIR /var/docker_sample_rails
 WORKDIR /var/www/footomo
+
 COPY Gemfile /var/www/footomo
 COPY Gemfile.lock /var/www/footomo
 
