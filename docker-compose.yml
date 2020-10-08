@@ -20,7 +20,7 @@
 # volumes:
 #   db-volume:
 
-    version: "3"
+version: "3"
 
 services:
   local-redis:
