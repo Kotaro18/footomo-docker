@@ -17,6 +17,6 @@ services:
     container_name:
       rails-rails
     command:
-      # bundle exec rails s -b 0.0.0.0
-      bundle exec rails s -b 54.248.19.33 
+      bundle exec rails s -b 0.0.0.0
+      
       
