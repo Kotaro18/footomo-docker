@@ -22,7 +22,9 @@ RUN apt-get upgrade -y
 RUN gem update bundler 
 RUN apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev -y
 RUN bundle install 
-# RUN bundle exec rails db:create 
-# RUN bundle exec rails db:migrate
+# RUN bundle exec rails db:migrate RAILS_ENV=production
+# RUN bundle exec rails s -e production
+
+ENV RAILS_ENV production
 
 EXPOSE 3000
