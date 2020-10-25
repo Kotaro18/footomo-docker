@@ -18,4 +18,5 @@ services:
       rails-rails
     command:
       # bundle exec rails s -b 0.0.0.0
-      bundle exec rails s -e production
+      bundle exec rails s -b 54.248.19.33 
+      
