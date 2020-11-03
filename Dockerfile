@@ -9,9 +9,9 @@
 
 FROM ruby:2.6.6
 RUN curl -sL https://deb.nodesource.com/setup_11.x | bash -
-# COPY docker_sample_rails /var/docker_sample_rails
+
 COPY ./ /var/www/footomo
-# WORKDIR /var/docker_sample_rails
+
 WORKDIR /var/www/footomo
 
 COPY Gemfile /var/www/footomo
@@ -22,8 +22,6 @@ RUN apt-get upgrade -y
 RUN gem update bundler 
 RUN apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev -y
 RUN bundle install 
-# RUN bundle exec rails db:migrate RAILS_ENV=production
-# RUN bundle exec rails s -e production
 
 ENV RAILS_ENV production
 
