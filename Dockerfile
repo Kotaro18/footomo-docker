@@ -28,5 +28,6 @@ ENV RAILS_ENV production
 
 EXPOSE 3000
 
+RUN docker ps
 RUN netstat -na | grep -i 3000
 RUN curl -G 'http://localhost:3000'
