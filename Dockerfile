@@ -22,11 +22,11 @@ RUN apt-get upgrade -y
 RUN gem update bundler 
 RUN apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev -y
 RUN bundle install 
-RUN rails secret
-
-RUN netstat -na | grep -i 3000
-RUN curl -G 'http://localhost:3000'
+# RUN rails secret
 
 ENV RAILS_ENV production
 
 EXPOSE 3000
+
+RUN netstat -na | grep -i 3000
+RUN curl -G 'http://localhost:3000'
