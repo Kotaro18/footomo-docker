@@ -22,6 +22,7 @@ RUN apt-get upgrade -y
 RUN gem update bundler 
 RUN apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev -y
 RUN bundle install 
+RUN brew install mkcert
 # RUN rails secret
 
 ENV RAILS_ENV production
