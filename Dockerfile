@@ -24,7 +24,8 @@ RUN apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev -y
 RUN bundle install 
 # RUN rails secret
 
-ENV RAILS_ENV production pumactl start
+ENV RAILS_ENV="production" pumactl start
+# ENV RAILS_ENV production pumactl start
 
 EXPOSE 3000
 
