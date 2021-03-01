@@ -25,7 +25,7 @@ RUN bundle install
 # RUN rails secret
 
 # ENV RAILS_ENV="production" pumactl start
-ENV RAILS_ENV production pumactl start
+ENV RAILS_ENV production 
 
 EXPOSE 3000
 
