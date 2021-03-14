@@ -23,7 +23,6 @@ RUN gem update bundler
 RUN apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev -y
 RUN bundle install 
 # RUN rails secret
-RUN rails -e production RAILS_SERVE_STATIC_FILES=true
 
 # ENV RAILS_ENV="production" pumactl start
 ENV RAILS_ENV production 
