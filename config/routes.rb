@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get 'mypage', to: 'users#me'
   post 'login', to: 'sessions#create'
   delete 'logout', to: 'sessions#destroy'
-  get 'stylesheets/application.css', to: 'stylesheets#application.css'
+ # get 'stylesheets/application.css', to: 'stylesheets#application.css'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'home#index'
